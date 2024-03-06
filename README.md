@@ -1,8 +1,10 @@
 # Simple Summary Site
 
-![Screenshot 2024-03-06 at 18.00.26.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F24%2F8j0bywhs64l2fj2163508_km0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_KizCtg%2FScreenshot%202024-03-06%20at%2018.00.26.png)
+![](site_home_page.png)
 
 Simple summary site will allow you to add items and summarise their total cost.
+
+*** **WARNING: This is a rudimentary proof-of-concept and requires much alteration to be productionised.** ***
 
 ## Requirements
 * Python 3.9+
@@ -10,7 +12,8 @@ Simple summary site will allow you to add items and summarise their total cost.
 
 ## Installation
 
-1. Run `export FLASK_APP=summary_site`
+1. Run `export FLASK_APP=summary_site`.
+2. Run `export FLASK_DEBUG=1`.
 2. Run `poetry install`.
 3. Run `poetry run flask run`.
 4. Navigate to http://127.0.0.1:5000 in your browser.

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "summary_site"
+version = "0.1.0"
+description = ""
+authors = ["hp310780"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.2"
+flask-sqlalchemy = "^3.1.1"
+flask-login = "^0.6.3"
+pytest = "^8.0.2"
+setuptools = "^69.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

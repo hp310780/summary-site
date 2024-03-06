@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    Total Cost of Items: £{{"%.2f"|format(total)}}
+    <br>
+    <button onclick="history.back()">Back</button>
+</h1>
+{% endblock %}

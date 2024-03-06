@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    Welcome, {{ name }}!
+    <form method="POST" , action="/additem">
+        Item: <input name="name" required/>
+        Price: <input name="price" required/>
+        <button type="add">Add</button>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}
+        </div>
+        {% endif %}
+        {% endwith %}
+    </form>
+    <h2>Current Items</h2>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        {% for d in data %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>£{{"%.2f"|format(d.price)}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form action="/summarise" method="POST">
+        <button type="submit">Summarise</button>
+    </form>
+
+</h1>
+{% endblock %}
